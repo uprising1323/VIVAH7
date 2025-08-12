@@ -1,5 +1,9 @@
 /* Vivah Navbar Styles 
 */
+
+
+/* Vivah Navbar Styles 
+*/
 body {
   font-family: 'Poppins', sans-serif;
   background: #f8f9ff;
@@ -12,7 +16,10 @@ body {
     margin-top: -20px;
     margin-bottom: -20px;
 }
-
+.navbar{
+margin-bottom: -7px;
+margin-top: -7px;
+}
 .navbar, .navbar.bg-light {
   background: #ffffff !important;
 }
@@ -50,7 +57,7 @@ body {
   box-shadow: 0 4px 12px rgba(42,59,143,0.12);
 }
 .navbar-logo {
-  height: 96px;
+  height: 116px;
   width: auto;
   display: block;
 }
@@ -913,6 +920,7 @@ body {
   color: #ecf0f1;
   position: relative;
   overflow: hidden;
+ 
 }
 
 .footer::before {
@@ -1073,8 +1081,7 @@ footer .social-links a {
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 193, 7, 0.2);
-  margin-top: 30px;
-  padding-top: 20px;
+ 
 }
 
 .footer-bottom p {
@@ -1083,7 +1090,7 @@ footer .social-links a {
   margin: 0;
 }
 
-* Our Friendly School Community Section */
+/* Our Friendly School Community Section */
 .our-community-section {
     padding: 80px 0;
     background: linear-gradient(135deg, #fff5f5 0%, #f0f8ff 100%);
@@ -1993,3 +2000,204 @@ textarea.form-control {
   .banner{
 width: 20px;
   }
+
+/* ============================================================
+   Maroon/Gold Elegant Theme Overrides (mobile-first)
+   Palette: Deep Maroon (#6b0f1a), Dark Maroon (#3f0a10), Gold (#d4af37), 
+            Soft Beige (#f8f1e7), White (#ffffff)
+   Typography: Playfair Display (headings), Open Sans (body)
+   ============================================================ */
+
+:root {
+  --brand-maroon: #6b0f1a;
+  --brand-maroon-dark: #3f0a10;
+  --brand-gold: #d4af37;
+  --brand-beige: #f8f1e7;
+  --brand-text: #2b2b2b;
+}
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  background: var(--brand-beige);
+  color: var(--brand-text);
+}
+
+h1, h2, h3, h4, h5, h6, .section-title, .hero-page-title {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  letter-spacing: 0.2px;
+}
+
+/* Navbar */
+.navbar, .navbar.bg-light {
+  background: #ffffff !important;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+}
+.navbar-brand { color: var(--brand-maroon) !important; }
+.navbar-nav .nav-link { color: #4b4b4b; }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+  color: var(--brand-maroon);
+  background: rgba(107, 15, 26, 0.06);
+}
+
+/* Primary Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, var(--brand-maroon), var(--brand-maroon-dark));
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(107, 15, 26, 0.18);
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--brand-maroon-dark), #2a0509);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(107, 15, 26, 0.24);
+}
+
+/* Hero */
+.hero-page-section {
+  background: linear-gradient(180deg, rgba(248,241,231,0.85), rgba(255,255,255,0.9));
+}
+.hero-img-overlay { background: rgba(248,241,231,0.35); }
+.hero-img-card {
+  background: rgba(255,255,255,0.95);
+  border: 1px solid rgba(212,175,55,0.18);
+}
+.hero-page-title { color: var(--brand-maroon); }
+.hero-page-subtitle { color: #555; }
+
+/* Sections */
+.areas-serve-section {
+  background: linear-gradient(135deg, #fff, var(--brand-beige));
+}
+.areas-card h3, .documents-card h3 { color: var(--brand-maroon); }
+.area-link { color: var(--brand-maroon); }
+.area-link:hover { color: var(--brand-maroon-dark); }
+.documents-card ul li::before { color: var(--brand-maroon); }
+
+/* Testimonials */
+.testimonials-section::before {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23d4af37" opacity="0.06"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+}
+.testimonial-carousel { border: 1px solid rgba(212,175,55,0.18); }
+.testimonial-avatar { border-color: var(--brand-maroon); }
+.testimonial-avatar::before {
+  background: linear-gradient(45deg, var(--brand-maroon), var(--brand-gold));
+}
+.testimonial-text p { color: #3a3a3a; }
+.testimonial-text p::before, .testimonial-text p::after { color: var(--brand-maroon-dark); }
+.testimonial-nav-btn {
+  border-color: var(--brand-maroon);
+  color: var(--brand-maroon);
+}
+.testimonial-nav-btn:hover {
+  background: var(--brand-maroon);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(107,15,26,0.25);
+}
+.dot { background: rgba(212,175,55,0.4); }
+.dot:hover { background: rgba(212,175,55,0.8); }
+.dot.active { background: var(--brand-gold); box-shadow: 0 0 10px rgba(212,175,55,0.5); }
+
+/* Footer */
+.footer {
+  background: linear-gradient(180deg, #2b0a0f, #1a0508);
+}
+.footer::before {
+  background: linear-gradient(90deg, var(--brand-gold), var(--brand-maroon));
+}
+.footer-section h4::after {
+  background: linear-gradient(90deg, var(--brand-gold), var(--brand-maroon));
+}
+footer .social-links a { color: var(--brand-maroon); }
+.social-links a { background: var(--brand-maroon); }
+.social-links a:hover { background: linear-gradient(135deg, var(--brand-maroon), var(--brand-maroon-dark)); }
+.footer-bottom { border-top: 1px solid rgba(212,175,55,0.25); }
+
+/* About/Lists */
+.about-us-section ul li::before { color: var(--brand-maroon); }
+.services-card ul li::before { color: var(--brand-maroon); }
+
+/* Contact */
+.contact-info { border-left-color: var(--brand-maroon); }
+.contact-details h5 { color: var(--brand-maroon); }
+.contact-section .btn-primary { border-radius: 12px; }
+
+/* Map */
+.map-container iframe { width: 100%; height: 360px; border: 0; }
+
+/* ==== Footer spacing fixes (mobile-first) ==== */
+/* Remove any unintended gap above/below the footer and tighten padding */
+
+/* Collapse space from the section right before the footer */
+.contact-section {
+  padding-bottom: 16px !important;
+}
+.contact-section .card.mb-5 {
+  margin-bottom: 0 !important;
+}
+
+/* Ensure the final section on the page doesn't leave extra space */
+
+
+/* ==== Navbar logo size (slightly bigger on larger screens) ==== */
+@media (min-width: 768px) {
+  .navbar-logo { height: 104px; }
+}
+@media (min-width: 992px) {
+  .navbar-logo { height: 112px; }
+}
+
+/* ==== Bigger navbar logo (second pass) ==== */
+@media (min-width: 768px) {
+  .navbar-logo { height: 120px !important; }
+  .navbar-brand { margin-top: -10px; margin-bottom: -10px; }
+}
+@media (min-width: 992px) {
+  .navbar-logo { height: 140px !important; }
+  .navbar-brand { margin-top: -6px; margin-bottom: -6px; }
+}
+@media (min-width: 1200px) {
+  .navbar-logo { height: 156px !important; }
+  .navbar-brand { margin-top: 0; margin-bottom: 0; }
+}
+
+/* ==== Remove hero image white overlay ==== */
+.hero-img-overlay {
+  background: transparent !important;
+  display: none !important;
+}
+
+/* ==== Fix Apply Now button hover in navbar ==== */
+/* Ensure nav button uses brand maroon and not blue/orange on hover */
+.navbar .navbar-nav .btn.btn-primary {
+  background: linear-gradient(135deg, var(--brand-maroon), var(--brand-maroon-dark)) !important;
+  color: #fff !important;
+}
+.navbar .navbar-nav .btn.btn-primary:hover {
+  background: linear-gradient(135deg, var(--brand-maroon-dark), #2a0509) !important;
+  color: #fff !important;
+  box-shadow: 0 8px 20px rgba(107, 15, 26, 0.24) !important;
+}
+/* Prevent generic nav-link hover background from overriding button */
+/* Keep default hover only for plain nav links, not the button */
+.navbar-nav .nav-link:not(.btn):hover {
+  background: rgba(107, 15, 26, 0.06) !important;
+}
+
+/* ==== Bigger navbar logo (third pass) ==== */
+@media (min-width: 768px) {
+  .navbar-logo { height: 140px !important; }
+  .navbar-brand { margin-top: 0; margin-bottom: 0; }
+}
+@media (min-width: 992px) {
+  .navbar-logo { height: 180px !important; }
+  .navbar-brand { margin-top: 0; margin-bottom: 0; }
+}
+@media (min-width: 1200px) {
+  .navbar-logo { height: 200px !important; }
+  .navbar-brand { margin-top: 0; margin-bottom: 0; }
+}
+
+/* ==== Remove all extra space around footer (robust) ==== */
+
+/* Remove margin/padding from the last section above the footer */
